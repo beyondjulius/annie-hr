@@ -1,9 +1,14 @@
 (function () {
   var nav = document.getElementById("site-nav");
   var drawer = document.getElementById("nav-drawer");
+  var isInner = document.body.classList.contains("inner");
 
   function onScroll() {
     if (!nav) return;
+    if (isInner) {
+      nav.classList.add("is-scrolled");
+      return;
+    }
     nav.classList.toggle("is-scrolled", window.scrollY > 24);
   }
 
@@ -26,24 +31,50 @@
     });
   });
 
+  function revealNow(el) {
+    el.classList.add("is-in");
+  }
+
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-in");
+            revealNow(entry.target);
             io.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.18 }
+      { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
     );
     document.querySelectorAll(".reveal").forEach(function (el) {
-      io.observe(el);
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+        revealNow(el);
+      } else {
+        io.observe(el);
+      }
     });
   } else {
-    document.querySelectorAll(".reveal").forEach(function (el) {
-      el.classList.add("is-in");
+    document.querySelectorAll(".reveal").forEach(revealNow);
+  }
+
+  var form = document.getElementById("contact-form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var name = (form.elements.namedItem("name") || {}).value || "";
+      var org = (form.elements.namedItem("organisation") || {}).value || "";
+      var intent = (form.elements.namedItem("intent") || {}).value || "";
+      var message = (form.elements.namedItem("message") || {}).value || "";
+      var subject = encodeURIComponent("Annie HR conversation — " + (org || name || "enquiry"));
+      var body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Organisation: " + org + "\n" +
+        "Intent: " + intent + "\n\n" +
+        message
+      );
+      window.location.href = "mailto:anneyeboah2021@gmail.com?subject=" + subject + "&body=" + body;
     });
   }
 })();

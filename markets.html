@@ -4,21 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Markets — Annie HR</title>
+  <meta name="description" content="Same Annie, three buying contexts: Ghana regulated operators, Africa remote teams, and international founders who need Accra-timezone people systems." />
+  <meta name="theme-color" content="#12352c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site.css" />
 </head>
-<body>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-nav is-scrolled" id="site-nav">
     <a class="brand-mark" href="index.html">Annie <span>HR</span></a>
+    <ul class="nav-links">
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html" aria-current="page">Markets</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
     <a class="nav-cta" href="contact.html">Start a conversation</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-open-nav><span></span></button>
   </header>
-  <main class="page-stub">
-    <p class="eyebrow">Coming next</p>
-    <h1>Markets</h1>
-    <p>Expanded Ghana, Africa, and International buying contexts — same Annie, three entry points.</p>
-    <p><a class="btn btn-dark" href="index.html">Back to homepage</a></p>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <button class="drawer-close" type="button" data-close-nav>Close</button>
+    <ul>
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html" aria-current="page">Markets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Start a conversation</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="section-inner reveal">
+        <p class="eyebrow">Markets</p>
+        <h1>One standard. Three contexts.</h1>
+        <p class="lead">Annie is Accra-rooted. The work travels. The buying context changes — the operating standard does not.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-inner reveal">
+        <div class="market-panels">
+          <article class="market-panel" id="ghana">
+            <h2>Ghana</h2>
+            <div>
+              <p class="who">For fintechs, regulated firms, and growing teams</p>
+              <p>When payroll inputs, employee records, HRIS structure, and regulator-facing documentation must hold under scrutiny, Annie brings local labour-system fluency plus Bank of Ghana and ISO documentation experience. Ideal when you need people ops that survive audit — not informal admin.</p>
+            </div>
+          </article>
+          <article class="market-panel" id="africa">
+            <h2>Africa</h2>
+            <div>
+              <p class="who">For remote and multi-country operators</p>
+              <p>When you need structured people ops without standing up a full HR department, Annie installs the trackers, lifecycle rhythm, and documentation discipline that keep distributed teams hireable and visible. Already delivered across Ghana–Nigeria remote patterns.</p>
+            </div>
+          </article>
+          <article class="market-panel" id="international">
+            <h2>International</h2>
+            <div>
+              <p class="who">For founders and ops leads outside Africa</p>
+              <p>When you want Accra-timezone capacity that already works to remote US delivery standards, Annie has operated customer support and data workflows for a US platform while holding regulated Ghanaian HR responsibilities. English-first. Confidential. Systems-minded.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-dark">
+      <div class="section-inner reveal">
+        <p class="eyebrow">Not for</p>
+        <h2>Where Annie is the wrong hire.</h2>
+        <p class="lead">Pure receptionist or inbox-only gigs as the primary ask. Cheapest hourly VA with no systems ownership. Environments that treat confidential or regulated people data casually.</p>
+        <p style="margin-top: 1.75rem;">
+          <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+          <a class="btn btn-ghost" href="offer.html" style="margin-left: 0.5rem;">See the offer</a>
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <span>Annie Opokua Yeboah · Accra, Ghana</span>
+      <span><a href="index.html">Annie HR</a></span>
+    </div>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

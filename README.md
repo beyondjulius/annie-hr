@@ -1,6 +1,6 @@
-# Annie HR — brand site (vision)
+# Annie HR — brand site
 
-Public preview of the Annie HR homepage and site map stubs.
+Public preview of the Annie HR site: Home, Offer, Proof, Markets, About, Contact.
 
 **Live:** https://beyondjulius.github.io/annie-hr/
 

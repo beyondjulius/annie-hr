@@ -4,21 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Annie HR</title>
+  <meta name="description" content="Annie Opokua Yeboah — Accra-based Human Capital and Operations professional building people systems for Ghana, Africa, and international remote teams." />
+  <meta name="theme-color" content="#12352c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site.css" />
 </head>
-<body>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-nav is-scrolled" id="site-nav">
     <a class="brand-mark" href="index.html">Annie <span>HR</span></a>
+    <ul class="nav-links">
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+    </ul>
     <a class="nav-cta" href="contact.html">Start a conversation</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-open-nav><span></span></button>
   </header>
-  <main class="page-stub">
-    <p class="eyebrow">Coming next</p>
-    <h1>About Annie</h1>
-    <p>Operator biography, credentials, MSc path, and working style — written to match the homepage category, not the old VA deck.</p>
-    <p><a class="btn btn-dark" href="index.html">Back to homepage</a></p>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <button class="drawer-close" type="button" data-close-nav>Close</button>
+    <ul>
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Start a conversation</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="section-inner reveal">
+        <p class="eyebrow">About</p>
+        <h1>Annie Opokua Yeboah</h1>
+        <p class="lead">Human Capital · Operations · Data &amp; Governance. Based in Tseaddo, Accra — delivering across Ghana, Africa, and international remote teams.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-inner about-layout reveal">
+        <div>
+          <p>Annie is a Human Capital and Operations professional with 5+ years across fintech, technology, agribusiness, public-sector, and NGO environments. She combines employee lifecycle administration, workforce data, recruitment coordination, compliance documentation, and remote operating discipline.</p>
+          <p>The through-line is infrastructure: centralising records into systems leadership can trust, keeping hiring and onboarding moving, and maintaining controlled documentation in regulated settings — including Bank of Ghana PFTSP licensing support and ISO/IEC 27001 ISMS records.</p>
+          <p>She is currently pursuing an MSc in Human Resources Management at the University of Gold Coast (Accra Business School), building on a BA English from KNUST and a stack of practice credentials in people analytics, information security, and generalist HR.</p>
+          <p style="margin-top: 1.75rem;">
+            <a class="btn btn-dark" href="contact.html">Start a conversation</a>
+            <a class="btn btn-line" href="proof.html" style="margin-left: 0.5rem;">See the proof</a>
+          </p>
+        </div>
+        <aside class="about-side">
+          <h2>How she works</h2>
+          <ul>
+            <li>Clear communication</li>
+            <li>Detail orientation</li>
+            <li>Structured follow-through</li>
+            <li>Confidentiality by default</li>
+            <li>Remote-ready, systems-first</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--paper-2);">
+      <div class="section-inner reveal">
+        <p class="eyebrow">Credentials</p>
+        <h2>Education and professional development</h2>
+        <div class="cred-grid">
+          <div class="cred">
+            <strong>MSc Human Resources Management</strong>
+            <span>University of Gold Coast (Accra Business School) · Oct 2025–Present</span>
+          </div>
+          <div class="cred">
+            <strong>B.A. English</strong>
+            <span>Kwame Nkrumah University of Science and Technology · 2016–2020</span>
+          </div>
+          <div class="cred">
+            <strong>ISO/IEC 27001:2013 Lead Implementer</strong>
+            <span>Information Security · April 2023</span>
+          </div>
+          <div class="cred">
+            <strong>People Analytics</strong>
+            <span>Wharton Online · February 2025</span>
+          </div>
+          <div class="cred">
+            <strong>Google Foundations of Cybersecurity</strong>
+            <span>August 2023</span>
+          </div>
+          <div class="cred">
+            <strong>Diploma in Generalist Human Resources Management</strong>
+            <span>September 2023</span>
+          </div>
+          <div class="cred">
+            <strong>ALX Virtual Assistant Program</strong>
+            <span>ALX Africa · September 2024</span>
+          </div>
+          <div class="cred">
+            <strong>HRCI Organizational Certification</strong>
+            <span>HCI Talent Strategy &amp; Acquisition · April 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <span>Annie Opokua Yeboah · Accra, Ghana</span>
+      <span><a href="index.html">Annie HR</a></span>
+    </div>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

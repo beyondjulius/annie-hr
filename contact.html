@@ -4,21 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Annie HR</title>
+  <meta name="description" content="Start a conversation with Annie Opokua Yeboah — hiring path or people-ops engagement from Accra." />
+  <meta name="theme-color" content="#12352c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site.css" />
 </head>
-<body>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-nav is-scrolled" id="site-nav">
     <a class="brand-mark" href="index.html">Annie <span>HR</span></a>
-    <a class="nav-cta" href="index.html">Home</a>
+    <ul class="nav-links">
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html" aria-current="page">Start a conversation</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-open-nav><span></span></button>
   </header>
-  <main class="page-stub">
-    <p class="eyebrow">Coming next</p>
-    <h1>Start a conversation</h1>
-    <p>Enquiry path TBD (email, WhatsApp, or booking). For now: <a href="mailto:anneyeboah2021@gmail.com">anneyeboah2021@gmail.com</a></p>
-    <p><a class="btn btn-dark" href="index.html">Back to homepage</a></p>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <button class="drawer-close" type="button" data-close-nav>Close</button>
+    <ul>
+      <li><a href="offer.html">Offer</a></li>
+      <li><a href="proof.html">Proof</a></li>
+      <li><a href="markets.html">Markets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Start a conversation</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="section-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Start a conversation.</h1>
+        <p class="lead">Hiring Annie onto a team, or engaging people-ops support — begin with the system you need and the context you operate in.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-inner contact-layout reveal">
+        <div class="contact-direct">
+          <p class="eyebrow">Direct</p>
+          <h2 style="max-width: none; font-size: 1.5rem;">Accra · remote-ready</h2>
+          <p>Email: <a href="mailto:anneyeboah2021@gmail.com">anneyeboah2021@gmail.com</a></p>
+          <p>Phone: <a href="tel:+233543402449">+233 543 402 449</a> · <a href="tel:+233501591600">+233 501 591 600</a></p>
+          <p class="form-note" style="margin-top: 1.25rem;">The form opens your email client with a prepared message. Nothing is stored on this site.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="mailto:anneyeboah2021@gmail.com" method="get">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Organisation
+            <input type="text" name="organisation" autocomplete="organization" />
+          </label>
+          <label>
+            Intent
+            <select name="intent" required>
+              <option value="">Select…</option>
+              <option value="Hire Annie (employment / contract role)">Hire Annie (employment / contract role)</option>
+              <option value="Engage people-ops support">Engage people-ops support</option>
+              <option value="Explore fit / discovery">Explore fit / discovery</option>
+            </select>
+          </label>
+          <label>
+            What do you need?
+            <textarea name="message" required placeholder="Market, team size, systems in place, and the outcome you need."></textarea>
+          </label>
+          <button class="btn btn-dark" type="submit">Open email draft</button>
+          <p class="form-note">Prefer WhatsApp or a booking link later? Say so in the message and we will align the path.</p>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <span>Annie Opokua Yeboah · Accra, Ghana</span>
+      <span><a href="index.html">Annie HR</a></span>
+    </div>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
