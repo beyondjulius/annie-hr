@@ -1,0 +1,20 @@
+# Secrets and local tooling
+env/
+.env
+.env.*
+
+# Prior-client leftover (not Annie)
+dist/
+
+# Intake / internal (CV, deck, strategy — not for public Pages)
+_intake/
+_docs/
+*.pdf
+*.pptx
+*.PPTX
+
+# Editor / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
